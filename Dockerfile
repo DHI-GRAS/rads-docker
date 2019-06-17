@@ -23,4 +23,5 @@ RUN \
 
 WORKDIR /rads
 
-CMD ["/bin/bash", "-l"]
+ENTRYPOINT ["rads2nc"]
+CMD ["--help"]
