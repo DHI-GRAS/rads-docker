@@ -15,8 +15,8 @@ RUN \
         apt-get install -y curl && \
         apt-get install -y libnetcdf-dev libnetcdff-dev netcdf-bin gfortran
 RUN \
-        curl -sL https://github.com/remkos/rads/archive/v4.3.4.tar.gz | tar xvz && \
-        cd rads-4.3.4 && \
+        curl -sL https://github.com/remkos/rads/archive/v4.3.6.tar.gz | tar xvz && \
+        cd rads-4.3.6 && \
         ./configure --prefix=/usr/local --datadir=/rads/data && \
         make && \
         make install
